@@ -33,7 +33,7 @@ const UploadData = () => {
            } 
           console.log(_data)
        
-        const URI = "vermillion-seahorse-8d3699.netlify.app/.netlify/functions/addTrain";
+        const URI = "https://vermillion-seahorse-8d3699.netlify.app/.netlify/functions/addTrain";
 
         axios({
             method: "POST",

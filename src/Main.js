@@ -11,7 +11,7 @@ const Main = (props) =>{
   const deleteHandler = (e) => {
     let id = e
     console.log(id)
-    let URI = "vermillion-seahorse-8d3699.netlify.app/.netlify/functions/deleteTrain"
+    let URI = "https://vermillion-seahorse-8d3699.netlify.app/.netlify/functions/deleteTrain"
 
     axios({
       method: "DELETE",
@@ -28,7 +28,7 @@ const Main = (props) =>{
   };
  
   useEffect(() => {
-    axios.get("vermillion-seahorse-8d3699.netlify.app/.netlify/functions/getTrain").then((response) => {
+    axios.get("https://vermillion-seahorse-8d3699.netlify.app/.netlify/functions/getTrain").then((response) => {
         setPost(response.data);
       console.log(response.data)
     }).catch((error) => {console.log(Error)})
